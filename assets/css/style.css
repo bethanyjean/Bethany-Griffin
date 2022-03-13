@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #39a6b2;
+    --secondary-color: #3c3e46;
+    --tertiary-color: #4d23e7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+/* Header Section */
+
+header {
+    padding: 20px 35px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;  
+}
+
+header h1 {
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    color: var(--secondary-color);
+    background:var(--primary-color);
+}
+
+header h1 a{
+    text-decoration: none;
+    font-size: 2.5vw;
+}
+
+header h1 a:visited{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: var(--primary-color)
+  }
+
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+  }  
+
+  header nav ul li a:visited {
+      color: var(--primary-color);
+  }
+
+  header nav ul li a:hover {
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;  
+  }
+
+ /* Hero */
+ .hero{
+    background-image: url(../images/LowCountry.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: realative;
+    height: 500px;
+    z-index: 9999;
+ } 
+
+/*About Me */
+
+.About-Me {
+    display: flex;
+}
+
