@@ -140,19 +140,17 @@ header nav ul{
     flex: 12;
 }
 
-.info-content header{
-    background-color: var(--background-color);
-    padding-top: 50%;
-    font-size: 1.5vw;
+.portfolio{
+    display: flex;
+    flex: 1,0,0;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--tertiary-color);
 }
 
-.info.content h2{
-    font-size: 1vw;
-}
-
-.info-content img{
-    width: 100%;
-    border: 5px, solid, black;
+.portfolio img{
+    width: 25%;
 }
 
 .info-content ul{
@@ -182,3 +180,79 @@ header nav ul{
     text-shadow: none;  
   }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+    .info-content {
+      flex: 0 70%;
+    }
+    
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .info h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .info-content {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .portfolio {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
+     .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .info {
+      flex: 0 100%;
+    }
+  }
+  
