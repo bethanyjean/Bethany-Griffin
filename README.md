@@ -25,7 +25,9 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport  
 
 ## Website
+[Bethany Griffin](https://bethanyjean.github.io/Bethany-Griffin/)
 
+![alt tag](./assets/images/Capture.PNG)
 
 ## Contribution
 Bethany Griffin
