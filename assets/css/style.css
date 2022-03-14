@@ -3,6 +3,8 @@
     --secondary-color: #424239;
     --tertiary-color: #bad1bd;
     --background-color: white;
+    --right-padding: 35px;
+    --left-padding: 50px:
 
 }
 
@@ -21,12 +23,13 @@ body {
 /* Header Section */
 
 header {
-    padding: 20px 35px 20px 0px;
+    padding: 20px var(--right-padding) 20px 0px;
     background: var(--secondary-color);
     color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: sticky;
     top: 0;  
 }
 
@@ -51,30 +54,30 @@ header h1 a:visited{
 
 /*Navagation*/
 
-header nav {
+header nav{
     margin: 7px 0;
 }
 
-header nav ul {
+header nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     color: var(--primary-color)
-  }
+}
 
-  header nav ul li a {
+  header nav ul li a{
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-  }  
+}  
 
-  header nav ul li a:visited {
+  header nav ul li a:visited{
       color: var(--primary-color);
-  }
+}
 
-  header nav ul li a:hover {
+  header nav ul li a:hover{
     color: var(--tertiary-color);
     border-radius: 15px;
     text-shadow: none;  
@@ -83,7 +86,7 @@ header nav ul {
  /* Hero */
  .hero{
     padding-bottom: 50px;
-    padding-right: 25px;
+    padding-right: var(--right-padding);
     display: flex;
     justify-content: right;
     align-items: flex-end;
@@ -92,7 +95,7 @@ header nav ul {
     background-attachment: fixed;
     height: 300px;
     z-index: 9999;
- } 
+    } 
 
  .hero p{
     display: flex;
@@ -100,39 +103,82 @@ header nav ul {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     font-size: 2.25vw;
- }
+    }
 
  /* Main Section */
+
+ .MainContent{
+     background: var(--background-color);
+ }
  
- .main{
+.info{
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    } 
 
-.main header{
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
+.info h3{
     font-size: 3vw;
+    flex: 1 30%;
+    border-right: 5px solid var(--primary-color);
+    text-align-last: right;
+}
+
+.info-content{
+    flex: 2, 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-text{
+    flex: 12;
+}
+
+.info-content header{
     background-color: var(--background-color);
-} 
-
-/*About Me */
-
-.About-Me {
-    display: flex;
+    padding-top: 50%;
+    font-size: 1.5vw;
 }
 
-/* My Work */
-
-.myWork {
-    display: flex;
+.info.content h2{
+    font-size: 1vw;
 }
 
-/* contact */
-
-.contact {
-    display: flex;
+.info-content img{
+    width: 100%;
+    border: 5px, solid, black;
 }
+
+.info-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.info-content ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}  
+  
+.info-content ul li a:visited{
+      color: var(--primary-color);
+}
+
+.info-content ul li a:hover{
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;  
+  }
 
